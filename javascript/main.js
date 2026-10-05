@@ -15,6 +15,21 @@ $(document).ready(function () {
 		slide: '.slideTOT'
 	});
 
+	$('.mainBannerSlider').slick({
+		autoplay: true,
+		autoplaySpeed: 3500,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		arrows: false,
+		dots: false,
+		infinite: true,
+		speed: 700,
+		cssEase: 'cubic-bezier(.22, .61, .36, 1)',
+		waitForAnimate: false,
+		swipeToSlide: true,
+		touchThreshold: 8
+	});
+
 	var $partnersSlider = $('.partnersSlider');
 	var $partnersBar = $('.partnersProgressBar');
 	function partnersProgress(slick, current) {
