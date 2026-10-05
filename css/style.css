@@ -479,13 +479,13 @@ button {
 	width: 226px;
 }
 .mainBannerCardClients .mainBannerCardBg{
-	top: 5px;
+	top: -30px;
 	left: 254px;
 	width: 330px;
 }
 .mainBannerCardYears .mainBannerCardBg{
-	top: 37px;
-	left: 265px;
+	top: 0px;
+	left: 205px;
 	width: 250px;
 }
 .mainBannerCardTitle{
