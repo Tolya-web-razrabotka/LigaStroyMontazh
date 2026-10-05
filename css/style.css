@@ -222,6 +222,10 @@ button {
 	display: block;
 	width: 165px;
 	margin-right: 40px;
+	transition: opacity .3s;
+}
+.headerLogo:hover{
+	opacity: .8;
 }
 .headerLogo img{
 	display: block;
@@ -246,7 +250,7 @@ button {
 	color: var(--black);
 	white-space: nowrap;
 	flex-shrink: 0;
-	transition: background .2s, color .2s;
+	transition: background .3s, color .3s;
 }
 .headerNavItem:after{
 	position: absolute;
@@ -260,7 +264,7 @@ button {
 .headerNavItem:hover,
 .headerNavItem:focus{
 	background: #ECEAE6;
-	color: var(--black);
+	color: var(--red);
 	text-decoration: none;
 }
 .headerRight{
@@ -277,6 +281,7 @@ button {
 	line-height: 1;
 	color: var(--black);
 	white-space: nowrap;
+	transition: color .3s;
 }
 
 .headerPhone:hover,
@@ -317,13 +322,17 @@ button {
 	font-size: 20px;
 	font-weight: 700;
 	color: #fff;
-	transition: background .2s;
+	transition: background .3s, box-shadow .3s, transform .15s;
 }
 .headerBtn:hover,
 .headerBtn:focus{
 	background: #9E2F2F;
+	box-shadow: 0 10px 24px rgba(184, 58, 58, .25);
 	color: #fff;
 	text-decoration: none;
+}
+.headerBtn:active{
+	transform: scale(.98);
 }
 
 
@@ -397,13 +406,17 @@ button {
 	font-size: 25px;
 	font-weight: 700;
 	color: #fff;
-	transition: background .2s;
+	transition: background .3s, box-shadow .3s, transform .15s;
 }
 .mainBannerBtn:hover,
 .mainBannerBtn:focus{
 	background: #9E2F2F;
+	box-shadow: 0 12px 28px rgba(184, 58, 58, .3);
 	color: #fff;
 	text-decoration: none;
+}
+.mainBannerBtn:active{
+	transform: scale(.98);
 }
 .mainBannerPanel{
 	position: absolute;
@@ -556,6 +569,10 @@ body .mainBannerCardText{
 .partnersItem img{
 	max-width: 85%;
 	max-height: 85%;
+	transition: transform .4s ease;
+}
+.partnersItem:hover img{
+	transform: scale(1.06);
 }
 .partnersProgress{
 	position: relative;
@@ -783,6 +800,13 @@ body .getContactSubtitle{
 	outline: none;
 	font-size: 20px;
 	color: var(--black);
+	transition: box-shadow .3s;
+}
+.getContactField input:hover{
+	box-shadow: 0 0 0 1px #E3E1DD;
+}
+.getContactField input:focus{
+	box-shadow: 0 0 0 2px rgba(184, 58, 58, .35);
 }
 .getContactField input::placeholder{
 	color: #4A5568;
@@ -798,12 +822,16 @@ body .getContactSubtitle{
 	font-size: 22px;
 	font-weight: 600;
 	color: #fff;
-	transition: background .2s;
+	transition: background .3s, box-shadow .3s, transform .15s;
 }
 .getContactBtn:hover,
 .getContactBtn:focus{
 	background: #9E2F2F;
+	box-shadow: 0 12px 28px rgba(184, 58, 58, .3);
 	outline: none;
+}
+.getContactBtn:active{
+	transform: scale(.98);
 }
 .getContactPolicy{
 	position: relative;
@@ -848,6 +876,10 @@ body .getContactSubtitle{
 .getContactPolicy a{
 	color: inherit;
 	text-decoration: underline;
+	transition: color .3s;
+}
+.getContactPolicy:hover span:before{
+	border-color: var(--red);
 }
 .getContactPolicy a:hover{
 	color: var(--red);
@@ -907,10 +939,11 @@ body .getContactSubtitle{
 	font-weight: 600;
 	line-height: 1.2;
 	color: #fff;
+	transition: color .3s;
 }
 .footerCardPhone:hover,
 .footerCardPhone:focus{
-	color: #fff;
+	color: var(--gray);
 	text-decoration: none;
 }
 .footerCardLabel{
@@ -936,6 +969,10 @@ body .getContactSubtitle{
 .footerLogo{
 	display: block;
 	width: 203px;
+	transition: opacity .3s;
+}
+.footerLogo:hover{
+	opacity: .8;
 }
 .footerLogo img{
 	display: block;
@@ -954,6 +991,7 @@ body .getContactSubtitle{
 	line-height: 16px;
 	color: #989898;
 	text-decoration: underline;
+	transition: color .3s;
 }
 .footerDoc:hover,
 .footerDoc:focus{
@@ -981,7 +1019,7 @@ body .getContactSubtitle{
 	font-size: 18px;
 	line-height: 25px;
 	color: #fff;
-	transition: color .2s;
+	transition: color .3s;
 }
 .footerLink:hover,
 .footerLink:focus{
@@ -996,7 +1034,7 @@ body .getContactSubtitle{
 	display: block;
 	width: 44px;
 	height: 44px;
-	transition: opacity .2s;
+	transition: opacity .3s, transform .3s;
 }
 .footerSocial img{
 	display: block;
@@ -1004,7 +1042,8 @@ body .getContactSubtitle{
 	height: 100%;
 }
 .footerSocial:hover{
-	opacity: .8;
+	opacity: .85;
+	transform: translateY(-3px);
 }
 
 
