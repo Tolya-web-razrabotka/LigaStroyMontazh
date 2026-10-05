@@ -34,4 +34,49 @@ $(document).ready(function () {
 		infinite: false,
 		speed: 500
 	});
+
+	// Яндекс карта
+
+	var $maps = $("#map");
+
+	if ($maps.length > 0) {
+		var center = [56.32257053322084, 44.00141489727857];
+
+		function createMap(mapId) {
+			var map = new ymaps.Map(mapId, {
+				center: center,
+				zoom: 12,
+			});
+
+			var placemark = new ymaps.Placemark(
+				center,
+				{},
+				{
+					iconLayout: "default#image",
+					iconImageHref: "/images/svg/marker.svg",
+					iconImageSize: [40, 40],
+					iconImageOffset: [-19, -44],
+				}
+			);
+
+			placemark.events.add("click", function () {
+				var url = "https://yandex.ru/maps/-/CTgRBMj-";
+				window.open(url, "_blank");
+			});
+
+			map.controls.remove("geolocationControl");
+			map.controls.remove("searchControl");
+			map.controls.remove("trafficControl");
+			map.controls.remove("typeSelector");
+			map.controls.remove("fullscreenControl");
+			map.controls.remove("zoomControl");
+			map.controls.remove("rulerControl");
+
+			map.geoObjects.add(placemark);
+		}
+
+		ymaps.ready(function () {
+			createMap("map");
+		});
+	}
 });
