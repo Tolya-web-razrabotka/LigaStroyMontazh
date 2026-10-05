@@ -327,6 +327,172 @@ button {
 }
 
 
+/* --- Main banner --- */
+
+.mainBanner{
+	padding-top: 10px;
+}
+.mainBannerInner{
+	position: relative;
+	height: 973px;
+}
+.mainBannerImg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 738px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.mainBannerImg img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: left top;
+}
+.mainBannerContent{
+	position: absolute;
+	top: 392px;
+	left: 25px;
+	z-index: 2;
+}
+.mainBannerTitle{
+	margin: 0 0 45px;
+	font-family: "Inter", sans-serif;
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 60px;
+	text-align: left;
+	text-transform: none;
+	color: var(--black);
+}
+.mainBannerBtn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 520px;
+    width: 100%;
+	height: 96px;
+	background: #B83A3A;
+	border-radius: 10px;
+	font-size: 25px;
+	font-weight: 700;
+	color: #fff;
+	transition: background .2s;
+}
+.mainBannerBtn:hover,
+.mainBannerBtn:focus{
+	background: #9E2F2F;
+	color: #fff;
+	text-decoration: none;
+}
+.mainBannerPanel{
+	position: absolute;
+	top: 680px;
+	left: 570px;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	border-top-left-radius: 24px;
+}
+.mainBannerPanel:before,
+.mainBannerPanel:after{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	content: '';
+	background: radial-gradient(circle at 0 0, transparent 24px, #fff 24.5px);
+}
+.mainBannerPanel:before{
+	top: 34px;
+	left: -24px;
+}
+.mainBannerPanel:after{
+	top: -24px;
+	right: 0;
+}
+.mainBannerCards{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	display: flex;
+	align-items: flex-end;
+	gap: 45px;
+}
+.mainBannerCard{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 30px;
+	min-height: 257px;
+	padding: 30px 45px 25px;
+	background: #F5F4F2;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.mainBannerCardQuality{
+	flex: 0 0 565px;
+	min-height: 200px;
+}
+.mainBannerCardClients{
+	flex: 0 0 565px;
+}
+.mainBannerCardYears{
+	flex: 1;
+}
+.mainBannerCardIcon{
+	position: absolute;
+	top: 18px;
+	right: 18px;
+}
+.mainBannerCardBg{
+	position: absolute;
+	opacity: .05;
+	filter: blur(4px);
+	pointer-events: none;
+}
+.mainBannerCardQuality .mainBannerCardBg{
+	top: 20px;
+	left: 283px;
+	width: 226px;
+}
+.mainBannerCardClients .mainBannerCardBg{
+	top: 5px;
+	left: 254px;
+	width: 330px;
+}
+.mainBannerCardYears .mainBannerCardBg{
+	top: 37px;
+	left: 265px;
+	width: 250px;
+}
+.mainBannerCardTitle{
+	position: relative;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.3;
+	color: var(--black);
+}
+.mainBannerCardTitle span{
+	color: #B83A3A;
+}
+.mainBannerCardText{
+	position: relative;
+	font-size: 20px;
+    font-weight: 400;
+	line-height: 26px;
+	color: var(--black);
+}
+body .mainBannerCardText{
+	margin: 0;
+}
+
+
 /* --- Media styles --- */
 
 
