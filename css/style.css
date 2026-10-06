@@ -206,7 +206,7 @@ button {
 /* --- Header --- */
 
 .header{
-	padding: 17px 0;
+	padding: 17px 75px;
 	background: #fff;
 }
 .headerInner{
@@ -385,6 +385,8 @@ button {
 	z-index: 2;
 }
 .mainBannerTitle{
+	max-width: 653px;
+	width: 100%;
 	margin: 0 0 45px;
 	font-family: "Inter", sans-serif;
 	font-size: 50px;
@@ -596,6 +598,8 @@ body .mainBannerCardText{
 	flex: 1;
 }
 .partnersTitle{
+	max-width: 616px;
+	width: 100%;
 	margin: 0 0 50px;
 	font-family: "Inter", sans-serif;
 	font-size: 50px;
@@ -664,6 +668,8 @@ body .mainBannerCardText{
 	transition: transform .6s ease;
 }
 .servicesItemName{
+	max-width: 190px;
+	width: 100%;
 	position: absolute;
 	left: 26px;
 	bottom: 31px;
@@ -1012,6 +1018,10 @@ body .getContactSubtitle{
 .footerServicesList{
 	display: grid;
 	grid-template-columns: 201px 207px auto;
+}
+.footerList {
+	max-width: 160px;
+	width: 100%;
 }
 .footerLink{
 	display: block;
