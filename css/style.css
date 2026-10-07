@@ -1115,7 +1115,8 @@ body .getContactSubtitle{
 	margin-top: 52px;
 }
 .footerMap{
-	flex: 0 0 1236px;
+	flex: 1 1 0;
+	min-width: 0;
 	height: 427px;
 	border-radius: 12px;
 	overflow: hidden;
@@ -1143,7 +1144,7 @@ body .getContactSubtitle{
 }
 
 .footerCards{
-	flex: 1;
+	flex: 0 0 394px;
 	display: flex;
 	flex-direction: column;
 	gap: 37px;
@@ -1187,7 +1188,7 @@ body .getContactSubtitle{
 
 .footerBottom{
 	display: grid;
-	grid-template-columns: 415px 771px 330px 1fr;
+	grid-template-columns: 415px 1fr 330px 146px;
 	margin-top: 30px;
 }
 .footerLogo{
@@ -1289,6 +1290,62 @@ body .getContactSubtitle{
 
 }
 @media screen and (max-width:1800px){
+.footerInner{
+	padding: 40px;
+}
+.getContact{
+	height: auto;
+	min-height: 657px;
+	padding: 50px 640px 40px 50px;
+	background-position: right center;
+}
+.getContactTitle{
+	font-size: 42px;
+	line-height: 52px;
+}
+body .getContactSubtitle{
+	margin-bottom: 40px;
+}
+.getContactField,
+.getContactBtn{
+	width: 100%;
+	max-width: 680px;
+}
+.getContactPolicy{
+	width: 100%;
+	max-width: 610px;
+}
+.footerContacts{
+	gap: 24px;
+	margin-top: 40px;
+}
+.footerMap{
+	flex: 1 1 0;
+	min-width: 0;
+}
+.footerCards{
+	flex: 0 0 380px;
+	gap: 24px;
+}
+.footerCard{
+	padding: 0 30px;
+}
+.footerBottom{
+	grid-template-columns: 260px 1fr 170px 130px;
+	gap: 30px;
+	margin-top: 40px;
+}
+.footerColServices .footerColTitle{
+	width: auto;
+}
+.footerServicesList{
+	grid-template-columns: repeat(3, auto);
+	gap: 0 30px;
+}
+.footerLink{
+	font-size: 16px;
+	line-height: 22px;
+}
 .headerInfo{
 	display: none;
 }
@@ -1465,6 +1522,36 @@ body .getContactSubtitle{
 }
 }
 @media screen and (max-width:1279px){
+.footer{
+	background: linear-gradient(to bottom, #fff 400px, var(--red) 400px);
+}
+.getContact{
+	min-height: 0;
+	padding: 40px 45% 40px 40px;
+	background:
+		linear-gradient(to right, #F6F6F5 45%, rgba(246, 246, 245, 0) 70%),
+		url(../images/getContactBg.png) no-repeat right center / cover,
+		#F6F6F5;
+}
+.footerBottom{
+	grid-template-columns: 1fr 200px 160px;
+	grid-template-areas:
+		"info nav socials"
+		"services services services";
+	row-gap: 40px;
+}
+.footerInfo{
+	grid-area: info;
+}
+.footerColServices{
+	grid-area: services;
+}
+.footerColNav{
+	grid-area: nav;
+}
+.footerColSocials{
+	grid-area: socials;
+}
 .headerNav{
 	display: none;
 }
@@ -1473,6 +1560,21 @@ body .getContactSubtitle{
 }
 }
 @media screen and (max-width:1199px){
+.footerContacts{
+	flex-direction: column;
+}
+.footerMap{
+	flex: none;
+	height: 360px;
+}
+.footerCards{
+	flex: none;
+	flex-direction: row;
+	gap: 20px;
+}
+.footerCard{
+	padding: 28px 30px;
+}
 .services{
 	padding-bottom: 90px;
 }
@@ -1578,6 +1680,12 @@ body .getContactSubtitle{
 	font-size: 18px;
 }
 }
+@media screen and (max-width:950px){
+.getContact{
+	padding: 40px;
+	background: #F6F6F5;
+}
+}
 @media screen and (max-width:900px){
 .mainBannerCards{
 	grid-template-columns: 1fr;
@@ -1588,6 +1696,84 @@ body .getContactSubtitle{
 }
 
 @media screen and (max-width:767px){
+.footer{
+	background: linear-gradient(to bottom, #fff 300px, var(--red) 300px);
+}
+.footerInner{
+	padding: 20px 16px 30px;
+	border-radius: 16px 16px 0 0;
+}
+.getContact{
+	padding: 28px 20px;
+	border-radius: 12px;
+}
+.getContactTitle{
+	font-size: 30px;
+	line-height: 38px;
+}
+body .getContactSubtitle{
+	margin-bottom: 24px;
+	font-size: 16px;
+	line-height: 22px;
+}
+.getContactField{
+	margin-bottom: 14px;
+}
+.getContactField input{
+	height: 60px;
+	font-size: 16px;
+}
+.getContactBtn{
+	height: 64px;
+	font-size: 18px;
+}
+.getContactPolicy{
+	margin-top: 18px;
+	font-size: 12px;
+	line-height: 16px;
+}
+.footerContacts{
+	gap: 16px;
+	margin-top: 24px;
+}
+.footerMap{
+	height: 300px;
+}
+.footerCards{
+	flex-direction: column;
+	gap: 12px;
+}
+.footerCard{
+	padding: 22px 20px;
+}
+.footerCardPhone{
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+.footerCardAddress{
+	font-size: 16px;
+	line-height: 22px;
+}
+.footerBottom{
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+		"services services"
+		"nav socials"
+		"info info";
+	gap: 30px 20px;
+	margin-top: 30px;
+}
+.footerColTitle{
+	margin-bottom: 16px;
+	padding-bottom: 14px;
+	font-size: 18px;
+}
+.footerLogo{
+	width: 150px;
+}
+.footerCopy{
+	margin-top: 20px;
+}
 .header{
 	padding-top: 12px;
 	padding-bottom: 12px;
@@ -1725,6 +1911,13 @@ body .getContactSubtitle{
 	
 }
 @media screen and (max-width:600px){
+.footerServicesList{
+	grid-template-columns: 1fr 1fr;
+	gap: 0 20px;
+}
+.footerList{
+	max-width: none;
+}
 .servicesItemBottom{
 	gap: 6px;
 }
@@ -1766,6 +1959,19 @@ body .getContactSubtitle{
 }
 }
 @media screen and (max-width:425px){
+.footerInner{
+	padding: 16px 12px 24px;
+}
+.getContact{
+	padding: 24px 16px;
+}
+.getContactTitle{
+	font-size: 26px;
+	line-height: 32px;
+}
+.footerMap{
+	height: 260px;
+}
 .services{
 	padding-bottom: 50px;
 }
