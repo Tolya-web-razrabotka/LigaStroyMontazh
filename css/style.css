@@ -237,7 +237,7 @@ button {
 	align-items: center;
 	gap: 13px;
 }
-.headerNavItem{
+.headerNav li a {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -252,7 +252,7 @@ button {
 	flex-shrink: 0;
 	transition: background .3s, color .3s;
 }
-.headerNavItem:after{
+.headerNav li a:after{
 	position: absolute;
 	top: 6px;
 	right: 6px;
@@ -261,8 +261,8 @@ button {
 	content: '';
 	background: url(../images/svg/arrowTopRight.svg) no-repeat center / contain;
 }
-.headerNavItem:hover,
-.headerNavItem:focus{
+.headerNav li a:hover,
+.headerNav li a:focus{
 	background: #ECEAE6;
 	color: var(--red);
 	text-decoration: none;

@@ -5,17 +5,17 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <jdoc:include type="head" />
+  <!-- <jdoc:include type="head" /> -->
   <!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
   <link type="text/css" href="css/bootstrap.css" rel="stylesheet">
   <link type="text/css" href="css/normalize.css" rel="stylesheet">
   <link type="text/css" href="css/slick.css" rel="stylesheet">
   <link type="text/css" href="css/style.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript" src="javascript/slide.js"></script>
-  <script type="text/javascript" src="javascript/slick.min.js"></script>
+  <script src="javascript/slide.js"></script>
+  <script src="javascript/slick.min.js"></script>
+  <title>ЛигаСтройМонтаж</title>
 </head>
-
 
 <body>
   <div class="wrapper">
@@ -26,12 +26,12 @@
             <a href="/" class="headerLogo">
               <img src="images/svg/logo.svg" alt="Лига Строймонтаж">
             </a>
-            <nav class="headerNav">
-              <a href="#" class="headerNavItem">Услуги</a>
-              <a href="#" class="headerNavItem">О компании</a>
-              <a href="#" class="headerNavItem">Галерея</a>
-              <a href="#" class="headerNavItem">Контакты</a>
-            </nav>
+            <ul class="headerNav">
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Галерея</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
           </div>
           <div class="headerRight">
             <a href="tel:+78314130779" class="headerPhone">
@@ -42,12 +42,12 @@
               <span class="headerTime">Время работы: 9:00-18:00</span>
               <span class="headerAddress">Н. Новгород, Новая, 28</span>
             </div>
-            <button href="#" class="headerBtn callback-toggle">Связаться с нами</button>
+            <button class="headerBtn callback-toggle">Связаться с нами</button>
           </div>
         </div>
       </header>
 
-      <section class="mainBanner">
+      <div class="mainBanner">
         <div class="container">
           <div class="mainBannerInner">
             <div class="mainBannerImg">
@@ -84,9 +84,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="partners">
+      <div class="partners">
         <div class="container">
           <div class="partnersInner">
             <div class="partnersBox">
@@ -108,7 +108,7 @@
               <div class="partnersProgress"><span class="partnersProgressBar"></span></div>
             </div>
             <div class="partnersAbout">
-              <h2 class="partnersTitle"><span>Профессионалы</span> в системах безопасности</h2>
+              <div class="partnersTitle"><span>Профессионалы</span> в системах безопасности</div>
               <div class="partnersText">
                 <p>ООО «ЛИГА СТРОЙМОНТАЖ» работает на рынке строительства и систем безопасности с 2004 года. Мы выполняем полный цикл работ: от проектирования и монтажа до пусконаладки и обслуживания инженерных систем любой сложности.</p>
                 <p>Наша команда — это квалифицированные инженеры и монтажники с многолетним опытом. Используем современное оборудование и технические решения, соответствующие ГОСТ, СП и нормативам МЧС России.</p>
@@ -119,10 +119,10 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="services">
+      </div>
+      <div class="services">
         <div class="container">
-          <h2 class="servicesTitle">Наши услуги</h2>
+          <div class="servicesTitle">Наши услуги</div>
           <div class="servicesBox">
             <a href="#" class="servicesItem">
               <img class="servicesItemImg" src="images/services/1.png" alt="Проектирование">
@@ -176,14 +176,14 @@
             </a>
           </div>
         </div>
-      </section>
+      </div>
     </div>
 
     <footer class="footer">
       <div class="container">
         <div class="footerInner">
           <form class="getContact" action="#" method="post">
-            <h2 class="getContactTitle">Заказать <span>обратный звонок</span></h2>
+            <div class="getContactTitle">Заказать <span>обратный звонок</span></div>
             <p class="getContactSubtitle">Оставьте свои контактные данные и наш специалист перезвоит Вам</p>
             <label class="getContactField getContactFieldUser">
               <input type="text" name="name" placeholder="Ваше имя.." required>
@@ -265,9 +265,8 @@
 
   </div>
 
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=6a0a70e3-b1fe-4c23-ab8b-779377082ed2"
-          type="text/javascript"></script>
-  <script type="text/javascript" src="javascript/main.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=6a0a70e3-b1fe-4c23-ab8b-779377082ed2"></script>
+  <script src="javascript/main.js"></script>
 </body>
 
 </html>

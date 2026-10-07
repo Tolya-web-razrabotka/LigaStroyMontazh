@@ -55,7 +55,7 @@ $(document).ready(function () {
 	var $maps = $("#map");
 
 	if ($maps.length > 0) {
-		var center = [56.32257053322084, 44.00141489727857];
+		var center = [56.31230006843377, 43.99366149999997];
 
 		function createMap(mapId) {
 			var map = new ymaps.Map(mapId, {
@@ -75,7 +75,7 @@ $(document).ready(function () {
 			);
 
 			placemark.events.add("click", function () {
-				var url = "https://yandex.ru/maps/-/CTgRBMj-";
+				var url = "https://yandex.ru/maps/-/CXqE4Z0y";
 				window.open(url, "_blank");
 			});
 
