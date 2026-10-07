@@ -1294,6 +1294,23 @@ body .getContactSubtitle{
 .headerPhone{
 	margin-right: 40px;
 }
+.mainBannerCards{
+	gap: 30px;
+}
+.mainBannerCardQuality,
+.mainBannerCardClients,
+.mainBannerCardYears{
+	flex: 1 1 0;
+}
+.mainBannerPanel{
+	left: calc((100% - 60px) / 3 + 5px);
+}
+.mainBannerBtn{
+	max-width: calc((100vw - 210px) / 3 - 55px);
+}
+.mainBannerSlide img{
+	object-position: 70% top;
+}
 }
 @media screen and (max-width:1599px){
 .header,
@@ -1319,6 +1336,72 @@ body .getContactSubtitle{
 	padding: 20px 24px;
 	font-size: 18px;
 }
+.mainBannerBtn{
+	max-width: calc((100vw - 140px) / 3 - 55px);
+}
+.mainBannerCard{
+	gap: 24px;
+	padding: 28px 32px 24px;
+}
+.mainBannerCardTitle{
+	font-size: 22px;
+}
+.mainBannerCardText{
+	font-size: 18px;
+	line-height: 24px;
+}
+.mainBannerCardIcon{
+	width: 40px;
+}
+}
+@media screen and (max-width:1439px){
+.mainBannerInner{
+	height: auto;
+}
+.mainBannerImg{
+	position: relative;
+	height: auto;
+	aspect-ratio: 1770 / 738;
+}
+.mainBannerContent{
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	aspect-ratio: 1770 / 738;
+	padding: 0 0 40px 40px;
+}
+.mainBannerTitle{
+	max-width: 45%;
+	margin-bottom: 30px;
+	font-size: 42px;
+	line-height: 52px;
+}
+.mainBannerBtn{
+	max-width: 420px;
+	height: 80px;
+	font-size: 22px;
+}
+.mainBannerPanel{
+	display: none;
+}
+.mainBannerCards{
+	position: static;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: stretch;
+	gap: 20px;
+	margin-top: 20px;
+}
+.mainBannerCard,
+.mainBannerCardQuality{
+	min-height: 0;
+}
+.mainBannerCardTitle{
+	padding-right: 50px;
+}
 }
 @media screen and (max-width:1279px){
 .headerNav{
@@ -1329,7 +1412,22 @@ body .getContactSubtitle{
 }
 }
 @media screen and (max-width:1199px){
-
+.mainBannerTitle{
+	margin-bottom: 24px;
+	font-size: 34px;
+	line-height: 42px;
+}
+.mainBannerBtn{
+	max-width: 340px;
+	height: 70px;
+	font-size: 20px;
+}
+.mainBannerCards{
+	grid-template-columns: 1fr 1fr;
+}
+.mainBannerCardYears{
+	grid-column: 1 / -1;
+}
 }
 
 @media screen and (max-width:991px){
@@ -1341,9 +1439,29 @@ body .getContactSubtitle{
 	padding: 16px 22px;
 	font-size: 16px;
 }
+.mainBannerContent{
+	padding: 0 0 30px 30px;
 }
-
-	
+.mainBannerTitle{
+	max-width: 55%;
+	margin-bottom: 16px;
+	font-size: 26px;
+	line-height: 32px;
+}
+.mainBannerBtn{
+	max-width: 280px;
+	height: 54px;
+	font-size: 18px;
+}
+}
+@media screen and (max-width:900px){
+.mainBannerCards{
+	grid-template-columns: 1fr;
+}
+.mainBannerCardYears{
+	grid-column: auto;
+}
+}
 
 @media screen and (max-width:767px){
 .header{
@@ -1361,6 +1479,58 @@ body .getContactSubtitle{
 .headerPhone,
 .headerBtn{
 	display: none;
+}
+.mainBannerImg{
+	height: 280px;
+	aspect-ratio: auto;
+	border-radius: 16px;
+}
+.mainBannerSlide img{
+	object-position: 70% center;
+}
+.mainBannerContent{
+	position: static;
+	display: block;
+	aspect-ratio: auto;
+	margin-top: 24px;
+	padding: 0;
+}
+.mainBannerTitle{
+	max-width: none;
+	margin-bottom: 20px;
+	font-size: 30px;
+	line-height: 38px;
+}
+.mainBannerBtn{
+	max-width: none;
+	height: 64px;
+	font-size: 20px;
+}
+.mainBannerCards{
+	grid-template-columns: 1fr;
+	gap: 12px;
+	margin-top: 24px;
+}
+.mainBannerCardYears{
+	grid-column: auto;
+}
+.mainBannerCard{
+	gap: 16px;
+	padding: 22px 20px 20px;
+	border-radius: 16px;
+}
+.mainBannerCardTitle{
+	padding-right: 50px;
+	font-size: 20px;
+}
+.mainBannerCardText{
+	font-size: 16px;
+	line-height: 22px;
+}
+.mainBannerCardIcon{
+	top: 16px;
+	right: 16px;
+	width: 34px;
 }
 }
 	
@@ -1384,6 +1554,17 @@ body .getContactSubtitle{
 }
 .mobileMenu{
 	width: 100%;
+}
+.mainBannerImg{
+	height: 220px;
+}
+.mainBannerTitle{
+	font-size: 26px;
+	line-height: 32px;
+}
+.mainBannerBtn{
+	height: 58px;
+	font-size: 18px;
 }
 }
 @media screen and (max-width:400px){
