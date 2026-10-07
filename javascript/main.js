@@ -38,6 +38,7 @@ $(document).ready(function () {
 		$partnersBar.css({ width: 100 / pages + '%', left: 100 / pages * page + '%' });
 	}
 	$partnersSlider.on('init', function (e, slick) { partnersProgress(slick, 0); });
+	$partnersSlider.on('breakpoint', function (e, slick) { partnersProgress(slick, slick.currentSlide); });
 	$partnersSlider.on('beforeChange', function (e, slick, current, next) { partnersProgress(slick, next); });
 	$partnersSlider.slick({
 		rows: 2,
@@ -47,7 +48,16 @@ $(document).ready(function () {
 		arrows: false,
 		dots: false,
 		infinite: false,
-		speed: 500
+		speed: 500,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			}
+		]
 	});
 
 	// Бургер-меню

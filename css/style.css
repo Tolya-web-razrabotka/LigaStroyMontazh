@@ -77,6 +77,7 @@
 }
 
 body{
+	min-width: 340px;
 	color: var(--black);
 	font-size: 20px;
 	font-weight: 400;
@@ -1313,6 +1314,25 @@ body .getContactSubtitle{
 }
 }
 @media screen and (max-width:1599px){
+.partners{
+	padding: 120px 0;
+}
+.partnersBox{
+	flex: 0 0 640px;
+	padding: 30px 35px;
+}
+.partnersItem{
+	height: 120px;
+}
+.partnersTitle{
+	margin-bottom: 36px;
+	font-size: 42px;
+	line-height: 52px;
+}
+.partnersText p{
+	font-size: 18px;
+	line-height: 24px;
+}
 .header,
 .wrapper .container{
 	padding-left: 40px;
@@ -1403,6 +1423,26 @@ body .getContactSubtitle{
 	padding-right: 50px;
 }
 }
+@media screen and (max-width:1350px){
+.partnersInner{
+	flex-direction: column;
+	align-items: stretch;
+	gap: 40px;
+}
+.partnersAbout{
+	order: -1;
+}
+.partnersBox{
+	flex: none;
+}
+.partnersTitle{
+	max-width: none;
+	margin-bottom: 24px;
+}
+.partnersText p{
+	max-width: none;
+}
+}
 @media screen and (max-width:1279px){
 .headerNav{
 	display: none;
@@ -1412,6 +1452,13 @@ body .getContactSubtitle{
 }
 }
 @media screen and (max-width:1199px){
+.partners{
+	padding: 90px 0;
+}
+.partnersTitle{
+	font-size: 40px;
+	line-height: 48px;
+}
 .mainBannerTitle{
 	margin-bottom: 24px;
 	font-size: 34px;
@@ -1467,6 +1514,46 @@ body .getContactSubtitle{
 .header{
 	padding-top: 12px;
 	padding-bottom: 12px;
+}
+.partners{
+	padding: 60px 0;
+}
+.partnersInner{
+	gap: 30px;
+}
+.partnersBox{
+	padding: 24px 20px;
+	border-radius: 16px;
+}
+.partnersLabel{
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+.partnersSlider .slick-list{
+	margin: 0 -7px;
+}
+.partnersSlider .slick-slide{
+	padding: 0 7px;
+}
+.partnersSlider .slick-slide > div + div{
+	margin-top: 14px;
+}
+.partnersItem{
+	height: 100px;
+	border-radius: 12px;
+}
+.partnersProgress{
+	width: 160px;
+	margin-top: 20px;
+}
+.partnersTitle{
+	margin-bottom: 16px;
+	font-size: 30px;
+	line-height: 38px;
+}
+.partnersText p{
+	font-size: 16px;
+	line-height: 22px;
 }
 .header,
 .wrapper .container{
@@ -1547,6 +1634,16 @@ body .getContactSubtitle{
 	
 }
 @media screen and (max-width:425px){
+.partners{
+	padding: 50px 0;
+}
+.partnersItem{
+	height: 84px;
+}
+.partnersTitle{
+	font-size: 26px;
+	line-height: 32px;
+}
 .header,
 .wrapper .container{
 	padding-left: 15px;
