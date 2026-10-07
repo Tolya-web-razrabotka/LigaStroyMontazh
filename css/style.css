@@ -862,7 +862,7 @@ body .mainBannerCardText{
 .servicesItem{
 	position: relative;
 	display: block;
-	height: 386px;
+	aspect-ratio: 312 / 386;
 	background: #fff;
 	border-radius: 20px;
 	overflow: hidden;
@@ -1314,6 +1314,24 @@ body .getContactSubtitle{
 }
 }
 @media screen and (max-width:1599px){
+.services{
+	padding-bottom: 120px;
+}
+.servicesTitle{
+	margin-bottom: 36px;
+	font-size: 42px;
+	line-height: 52px;
+}
+.servicesBox{
+	gap: 24px;
+	padding: 30px 35px;
+}
+.servicesItemName{
+	bottom: 24px;
+	max-width: calc(100% - 80px);
+	font-size: 18px;
+	line-height: 24px;
+}
 .partners{
 	padding: 120px 0;
 }
@@ -1375,6 +1393,9 @@ body .getContactSubtitle{
 }
 }
 @media screen and (max-width:1439px){
+.servicesBox{
+	grid-template-columns: repeat(4, 1fr);
+}
 .mainBannerInner{
 	height: auto;
 }
@@ -1452,6 +1473,19 @@ body .getContactSubtitle{
 }
 }
 @media screen and (max-width:1199px){
+.services{
+	padding-bottom: 90px;
+}
+.servicesTitle{
+	font-size: 40px;
+	line-height: 48px;
+}
+.servicesBox{
+	grid-template-columns: repeat(3, 1fr);
+}
+.servicesItemName{
+	bottom: 20px;
+}
 .partners{
 	padding: 90px 0;
 }
@@ -1478,6 +1512,49 @@ body .getContactSubtitle{
 }
 
 @media screen and (max-width:991px){
+.servicesItem{
+	border-radius: 14px;
+}
+.servicesItemBottom{
+	position: absolute;
+	left: 12px;
+	right: 10px;
+	bottom: 10px;
+	z-index: 1;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 8px;
+}
+.servicesItemName{
+	position: static;
+	flex: 1;
+	min-width: 0;
+	max-width: none;
+	font-size: 13px;
+	line-height: 17px;
+	overflow-wrap: break-word;
+}
+.servicesItemCorner{
+	position: static;
+	flex-shrink: 0;
+	width: auto;
+	height: auto;
+	background: none;
+}
+.servicesItemCorner:before,
+.servicesItemCorner:after{
+	display: none;
+}
+.servicesItemBtn{
+	position: static;
+	width: 34px;
+	height: 34px;
+	border-radius: 8px;
+}
+.servicesItemBtn img{
+	width: 16px;
+}
 .headerPhone{
 	margin-right: 24px;
 	font-size: 18px;
@@ -1514,6 +1591,26 @@ body .getContactSubtitle{
 .header{
 	padding-top: 12px;
 	padding-bottom: 12px;
+}
+.services{
+	padding-bottom: 60px;
+}
+.servicesTitle{
+	margin-bottom: 24px;
+	font-size: 30px;
+	line-height: 38px;
+}
+.servicesBox{
+	gap: 12px;
+	padding: 16px;
+	border-radius: 16px;
+}
+.servicesBox{
+	grid-template-columns: repeat(2, 1fr);
+}
+.servicesItemName{
+	font-size: 14px;
+	line-height: 18px;
 }
 .partners{
 	padding: 60px 0;
@@ -1628,12 +1725,54 @@ body .getContactSubtitle{
 	
 }
 @media screen and (max-width:600px){
-	
+.servicesItemBottom{
+	gap: 6px;
+}
+.servicesItemName{
+	font-size: 14px;
+	line-height: 18px;
+}
+.servicesItemBtn{
+	width: 28px;
+	height: 28px;
+	border-radius: 7px;
+}
+.servicesItemBtn img{
+	width: 13px;
+}
 }
 @media screen and (max-width:485px){
-	
+.servicesBox{
+	gap: 8px;
+	padding: 8px;
+}
+.servicesItemBottom{
+	left: 6px;
+	right: 5px;
+	bottom: 5px;
+	gap: 3px;
+}
+.servicesItemName{
+	font-size: 13px;
+	line-height: 16px;
+}
+.servicesItemBtn{
+	width: 22px;
+	height: 22px;
+	border-radius: 6px;
+}
+.servicesItemBtn img{
+	width: 11px;
+}
 }
 @media screen and (max-width:425px){
+.services{
+	padding-bottom: 50px;
+}
+.servicesTitle{
+	font-size: 26px;
+	line-height: 32px;
+}
 .partners{
 	padding: 50px 0;
 }
@@ -1668,4 +1807,18 @@ body .getContactSubtitle{
 	
 }
 @media screen and (max-width:370px){
-	}
+.servicesItemName{
+	font-size: 12px;
+	line-height: 15px;
+}
+}
+@media screen and (max-width:340px){
+.servicesBox{
+	gap: 6px;
+	padding: 6px;
+}
+.servicesItemName{
+	font-size: 11px;
+	line-height: 14px;
+}
+}
